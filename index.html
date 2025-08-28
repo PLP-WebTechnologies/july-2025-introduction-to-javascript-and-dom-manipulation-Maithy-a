@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maithya Wk-5</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>Maithya Wk-5</header>
+    <main>
+        <!-- Voting Age Calculator -->
+        <div class="voting">
+            <h3>Voting age calculator</h3>
+            <div class="container">
+                <label for="age">Age:</label>
+                <input type="text" id="age" placeholder="Enter your age">
+                <button id="checkAge" type="submit">Validate</button>
+                <p id="ageResult"></p>
+            </div>
+        </div>
+
+        <h3>Shopping Cart Helper</h3>
+        <div class="cart-container">
+            <label for="itemName">Item Name:</label>
+            <input type="text" id="itemName" placeholder="Enter product name">
+
+            <label for="itemPrice">Price:</label>
+            <input type="number" id="itemPrice" placeholder="Enter price">
+
+            <button id="addItem">Add Item</button>
+
+            <ul id="cartList"></ul>
+
+            <p id="cartTotal">Total: $0</p>
+        </div>
+
+        <header>JavaScript Loops — Demo</header>
+
+        <!-- Countdown -->
+        <div class="container">
+            <h3>1. Countdown Generator</h3>
+            <label>Enter a number:</label>
+            <input type="number" id="countInput">
+            <button onclick="generateCountdown()">Start Countdown</button>
+            <ul id="countdownList"></ul>
+        </div>
+
+        <!-- Multiplication Table -->
+        <div class="container">
+            <h3>2. Multiplication Table</h3>
+            <label>Enter a number:</label>
+            <input type="number" id="tableInput">
+            <button onclick="generateTable()">Show Table</button>
+
+            <!-- Table container -->
+            <table id="tableOutput" border="1"></table>
+        </div>
+
+
+        <!-- Array Iteration -->
+        <div class="container">
+            <h3>3. Favorite Fruits</h3>
+            <button onclick="showFruits()">Show Fruits</button>
+            <ul id="fruitList"></ul>
+        </div>
+
+        <!-- DOM Manipulation -->
+        <div class="container">
+            <h3>4. Mastering the DOM</h3>
+            <p id="domText">Click the buttons below to interact with me!</p>
+            <button onclick="changeText()">Change Text</button>
+            <button onclick="toggleHighlight()">Toggle Highlight</button>
+            <button onclick="addNewElement()">Add New Element</button>
+            <div id="extraElements"></div>
+        </div>
+
+    </main>
+    <script src="main.js"></script>
+</body>
+
+</html>

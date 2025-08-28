@@ -1,0 +1,236 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg: #f7f9fc;
+  --text: #1e293b;
+  --accent: #06b6d4;
+  --accent-2: #0ea5e9;
+  --card: #ffffff;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--text);
+  background: var(--bg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+header {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+  max-width: 600px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 1.25rem;
+  border-radius: 12px;
+  background: var(--card);
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  box-shadow: 0 8px 20px rgba(2, 6, 23, 0.06);
+}
+
+.voting h3 {
+  margin-bottom: 1rem;
+  color: var(--text);
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+}
+
+input,
+select {
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid rgba(15, 23, 42, 0.15);
+  outline: none;
+  font-size: 1rem;
+}
+
+input:focus,
+select:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px rgba(6, 182, 212, 0.25);
+}
+
+button {
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+  background: linear-gradient(180deg, var(--accent), var(--accent-2));
+  color: #fff;
+  box-shadow: 0 8px 18px rgba(6, 182, 212, 0.12);
+  transition: transform 0.08s ease, box-shadow 0.12s ease, opacity 0.12s;
+}
+
+button:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: scale(0.97);
+  box-shadow: 0 4px 12px rgba(6, 182, 212, 0.2);
+}
+
+#ageResult {
+  font-weight: bold;
+  margin-top: 0.5rem;
+  min-height: 1.25rem;
+}
+
+/* ---- Shopping Cart Section ---- */
+.cart-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 1.25rem;
+  border-radius: 12px;
+  background: var(--card);
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  box-shadow: 0 8px 20px rgba(2, 6, 23, 0.06);
+}
+
+.cart-container h3 {
+  margin-bottom: 0.5rem;
+  color: var(--text);
+}
+
+.cart-container input {
+  width: 100%;
+}
+
+#addItem {
+  width: 100%;
+}
+
+#cartList {
+  margin-top: 0.5rem;
+  padding-left: 1.25rem;
+}
+
+#cartList li {
+  margin-bottom: 0.4rem;
+  list-style: disc;
+  color: var(--text);
+}
+
+#cartTotal {
+  margin-top: 0.75rem;
+  font-size: 1.1em;
+  font-weight: bold;
+  color: var(--accent-2);
+}
+
+/* Countdown */
+#countdownList {
+  list-style: none;
+  margin-top: 1rem;
+  padding: 0;
+}
+
+#countdownList li {
+  background: #f1f1f1;
+  border: 1px solid #ccc;
+  margin: 5px 0;
+  padding: 3px;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-align: center;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+#countdownList li:hover {
+  background: #dfe6e9;
+}
+
+/* Multiplication table */
+#tableOutput {
+  margin-top: 1rem;
+  width: 100%;
+  border-collapse: collapse;
+  animation: fadeIn 0.5s ease forwards;
+  opacity: 0;
+}
+
+#tableOutput th,
+#tableOutput td {
+  border: 1px dashed #ccc;
+  padding: 8px;
+  text-align: center;
+}
+
+#tableOutput th {
+  background: var(--accent);
+  color: #fff;
+}
+
+/* FRUITS */
+#fruitList {
+  list-style: none;
+  margin-top: 1rem;
+  padding: 0;
+}
+
+.fruit-item {
+  background: #f9f9f9;
+  margin: 5px 0;
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px dashed #ccc;
+  font-size: 16px;
+  list-style: none;
+  animation: fadeIn 0.5s ease forwards;
+  opacity: 0;
+}
+
+/* DOM */
+.highlight {
+  color: white;
+  background: #2ecc71;
+  padding: 5px 10px;
+  border-radius: 6px;
+  transition: 0.3s ease;
+}
+.new-item {
+  background: #f9f9f9;
+  border: 1px dashed #ccc;
+  margin: 5px 0;
+  padding: 8px;
+  border-radius: 6px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
